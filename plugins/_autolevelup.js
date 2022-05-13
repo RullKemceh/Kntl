@@ -11,7 +11,7 @@ export function before(m) {
         m.reply(`
 Selamat, anda telah naik level!
 *${before}* -> *${user.level}*
-gunakan Selamat🥳*
+*Selamat🥳*
 	`.trim())
     }
 }
