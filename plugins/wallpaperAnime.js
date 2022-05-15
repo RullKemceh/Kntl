@@ -12,4 +12,4 @@ handler.tags = ['internet']
 handler.command = /^(wallpaper|wp)anime$/i
 handler.limit = true
 
-module.exports = handler
+export default handler
