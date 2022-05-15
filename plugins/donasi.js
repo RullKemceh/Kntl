@@ -1,5 +1,6 @@
 let handler =  m => m.reply(`
 ╭─「 Donasi 」
+│ Donasi Seikhlasnya Bg
 │ • https://saweria.co/Itsrullbot
 ╰────
 `.trim()) // Tambah sendiri kalo mau
