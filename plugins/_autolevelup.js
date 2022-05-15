@@ -9,9 +9,10 @@ export function before(m) {
 
     if (before !== user.level) {
         m.reply(`
-Selamat, anda telah naik level!
-*${before}* -> *${user.level}*
-*Selamat🥳*
+𝐿𝐸𝑉𝐸𝐿 𝑈𝑃!
+𝗟𝗲𝘃𝗲𝗹 𝗦𝗲𝗯𝗲𝗹𝘂𝗺𝗻𝘆𝗮: ${before}
+𝙇𝙚𝙫𝙚𝙡 𝙎𝙚𝙠𝙖𝙧𝙖𝙣𝙜: ${user.level}
+*[ 𝘼𝙪𝙩𝙤 𝙇𝙚𝙫𝙚𝙡 𝙐𝙥]*
 	`.trim())
     }
 }
