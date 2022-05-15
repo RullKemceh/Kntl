@@ -1,23 +1,25 @@
-//Fix simi
-//BOTCAHX
+// simi
+import fetch from 'node-fetch'
 
-let fetch = require('node-fetch')
-
-let handler = m => m
-
-handler.before = async (m) => {
+export async function before(m) {
     let chat = db.data.chats[m.chat]
-    if (chat.simi && !chat.isBanned) {
-        if (/^.*false|disable|(turn)?off|0/i.test(m.text)) return
+    if (chat.simi) {
         if (!m.text) return
-        let res = await fetch(API('https://api.simsimi.net', '/v2/', { text: encodeURIComponent(m.text), lc: 'id' }))
-        if (!res.ok) return m.reply(eror)
+        let url = `https://api-sv2.simsimi.net/v2/?text=${m.text}&lc=id&cf=true`
+        let res = await fetch(url)
         let json = await res.json()
-        if (json.success == "Aku tidak mengerti apa yang kamu katakan.Tolong ajari aku.") return m.reply('simi nya gk tau bang')
-        m.reply(json.success)
+        let {
+            response,
+            result
+        } = json.messages[0]
+        await this.chatRead(m.chat, m.sender, m.id || m.key.id)
+        await delay(1000)
+        await this.sendPresenceUpdate('composing', m.chat)
+        await delay(2000)
+        m.reply(response)
         return !0
     }
     return !0
 }
 
-module.exports = handler
+const delay = time => new Promise(res => setTimeout(res, time))
