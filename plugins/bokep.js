@@ -12,3 +12,5 @@ handler.premium = true
 handler.register = true
 handler.limit = 1
 module.exports = handler
+
+export default handler
