@@ -160,7 +160,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   }
 }
 handler.help = ['menu', 'help', '?']
-handler.tags = ['main', 'RullBot']
+handler.tags = ['main']
 handler.command = /^(menu|help|\?)$/i
 
 handler.exp = 3
