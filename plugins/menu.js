@@ -32,16 +32,9 @@ const defaultMenu = {
 │ 「 %me 」
 │ 𝙏𝙚𝙧𝙞𝙢𝙖𝙠𝙖𝙨𝙞𝙝 𝙏𝙚𝙡𝙖𝙝
 │ 𝙈𝙚𝙣𝙜𝙜𝙪𝙣𝙖𝙠𝙖𝙣 𝘽𝙤𝙩 𝙄𝙣𝙞
-│ 𝙎𝙚𝙢𝙤𝙜𝙖 𝙎𝙚𝙝𝙖𝙩 𝙎𝙚𝙡𝙖𝙡𝙪
-│ 
-│ 𝙋𝙚𝙧𝙖𝙩𝙪𝙧𝙖𝙣 𝘽𝙤𝙩:
-│ 𝗗𝗶𝗹𝗮𝗿𝗮𝗻𝗴 𝗦𝗽𝗮𝗺 𝗙𝗶𝘁𝘂𝗿
-│ 𝗝𝗲𝗱𝗮 𝗣𝗲𝗿𝗶𝗻𝘁𝗮𝗵 5 𝗠𝗲𝗻𝗶𝘁
-│ 
-│ 𝗕𝗼𝘁 𝗧𝗶𝗱𝗮𝗸 𝗠𝗲𝗻𝘆𝗶𝗺𝗽𝗮𝗻 𝗗𝗮𝘁𝗮
-│ 𝗗𝗮𝘁𝗮 𝗔𝗸𝗮𝗻 𝗗𝗶 𝗥𝗲𝘀𝗲𝘁 𝗦𝗮𝗮𝘁
-│ 𝗕𝗼𝘁 𝗥𝗲𝘀𝘁𝗮𝗿𝘁 𝗔𝘁𝗮𝘂 𝗢𝗳𝗳
-│ 
+│
+│ Mohon Jangan Spam
+│
 ╰┬────────────┈ ⳹
 ┌┤◦➛ 𝒩𝒶𝓂𝒶: %name!
 ││◦➛ ℒ𝒾𝓂𝒾𝓉: %limit Limit
@@ -158,8 +151,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
-    const cloudbot = './src/Rull.png'
-    conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', '𝔤𝔯𝔬𝔲𝔭 𝔟𝔬𝔱', null, null, [
+    const cloudbot = './src/Rull.jpg'
+    conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', 'Group Bot', null, null, [
       ['💸𝘋𝘰𝘯𝘢𝘴𝘪', '/donasi'],
       ['📨𝘚𝘱𝘦𝘦𝘥', '/ping'],
       ['🎀𝘖𝘸𝘦𝘳 𝘉𝘰𝘵', '/owner']
