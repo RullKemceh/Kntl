@@ -23,9 +23,9 @@ let handler = async (m, { usedPrefix }) => {
         user[rewardItem] += total * 1
         if (total) text += `\n││◦➛ ${global.rpg.emoticon(rewardItem)}: ${total}`                  
     }
-    text += `\n│╰────────────┈ ⳹\n│ RullBot-𝐌𝐃 \n╰━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙`
-    const poid = './src/Adventure.png'
-    conn.sendHydrated(m.chat, '🄰🄳🅅🄴🄽🅃🅄🅁🄴✨', text.trim(), poid, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', '𝙶𝚁𝙾𝚄𝙿 𝙱𝙾𝚃', null, null, [
+    text += `\n│╰────────────┈ ⳹\n│ 𝐂𝐥𝐨𝐮𝐝𝐁𝐨𝐭-𝐌𝐃 \n╰━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙`
+    const poid = 'https://i.ibb.co/64mn29X/images-3.jpg'
+    conn.sendHydrated(m.chat, '🄰🄳🅅🄴🄽🅃🅄🅁🄴✨', text.trim(), poid, 'https://github.com', '𝐆𝐢𝐭𝐡𝐮𝐛', null, null, [
       ['𝐃𝐨𝐧𝐚𝐭𝐞', '/donasi'],
       ['𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲', '/inv'],
       ['𝐂𝐫𝐞𝐚𝐭𝐨𝐫', '/owner']
