@@ -23,12 +23,12 @@ let handler = async (m, { usedPrefix }) => {
         user[rewardItem] += total * 1
         if (total) text += `\n││◦➛ ${global.rpg.emoticon(rewardItem)}: ${total}`                  
     }
-    text += `\n│╰────────────┈ ⳹\n│ 𝐂𝐥𝐨𝐮𝐝𝐁𝐨𝐭-𝐌𝐃 \n╰━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙`
-    const poid = 'https://i.ibb.co/64mn29X/images-3.jpg'
-    conn.sendHydrated(m.chat, '🄰🄳🅅🄴🄽🅃🅄🅁🄴✨', text.trim(), poid, 'https://github.com', '𝐆𝐢𝐭𝐡𝐮𝐛', null, null, [
-      ['𝐃𝐨𝐧𝐚𝐭𝐞', '/donasi'],
-      ['𝐈𝐧𝐯𝐞𝐧𝐭𝐨𝐫𝐲', '/inv'],
-      ['𝐂𝐫𝐞𝐚𝐭𝐨𝐫', '/owner']
+    text += `\n│╰────────────┈ ⳹\n│ ℜ𝔲𝔩𝔩𝔅𝔬𝔱 \n╰━━━━━━━━━━━━┈ ❋ཻུ۪۪⸙`
+    const poid = './src/Adventure.png'
+    conn.sendHydrated(m.chat, '𝗔𝗗𝗩𝗘𝗡𝗧𝗨𝗥𝗘✨', text.trim(), poid, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', '𝐺𝐶', null, null, [
+      ['𝐷𝑜𝑛𝑎𝑠𝑖', '/donasi'],
+      ['𝐼𝑛𝑣𝑒𝑛𝑡𝑜𝑟𝑦', '/inv'],
+      ['𝑂𝑤𝑛𝑒𝑟', '/owner']
     ], m)
     user.lastadventure = new Date * 1
 }
