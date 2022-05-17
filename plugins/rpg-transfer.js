@@ -10,7 +10,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let user = global.db.data.users[m.sender]
     const item = items.filter(v => v in user && typeof user[v] == 'number')
     let lol = `Use format ${usedPrefix}${command} [type] [value] [number]
-example ${usedPrefix}${command} money 9999 @621927237001
+example ${usedPrefix}${command} money 9999 @620000
 
 📍 Transferable items
 ${item.map(v => `${rpg.emoticon(v)}`.trim()).join('\n')}
@@ -26,7 +26,7 @@ ${item.map(v => `${rpg.emoticon(v)}`.trim()).join('\n')}
 Are you sure you want to transfer *${count}* ${rpg.emoticon(type)}${special(type)} to *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}*
 Timeout *60* detik
 `.trim()
-    let c = 'CloudBot'
+    let c = 'RullBot'
     conn.sendButton(m.chat, confirm, c, null, [['y'], ['n']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
