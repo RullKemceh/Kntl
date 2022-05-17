@@ -159,7 +159,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const cloudbot = './src/Rull.png'
-    conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/G9eV8h1J3LS0kmTfLAzgcc', '𝔤𝔯𝔬𝔲𝔭 𝔟𝔬𝔱', null, null, [
+    conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', '𝔤𝔯𝔬𝔲𝔭 𝔟𝔬𝔱', null, null, [
       ['💸𝘋𝘰𝘯𝘢𝘴𝘪', '/donasi'],
       ['📨𝘚𝘱𝘦𝘦𝘥', '/ping'],
       ['🎀𝘖𝘸𝘦𝘳 𝘉𝘰𝘵', '/owner']
