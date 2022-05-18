@@ -107,34 +107,32 @@ ${Object.keys(inventory.others).map(v => user[v] && `*${global.rpg.emoticon(v)}:
 
 
 
-
-*📍 Tools*
+•───────•°•❀•°•───────•
+*➤ Tools*
 ${tools}` : ''}${items ? `
+•───────•°•❀•°•───────•
 
 
-
-
-*📍 Items*
+•───────•°•❀•°•───────•
+*➤ Items*
 ${items}
 *🎒 Total Items:* ${Object.keys(inventory.items).map(v => user[v]).reduce((a, b) => a + b, 0)} Items` : ''}${crates ? `
+•───────•°•❀•°•───────•
 
 
-
-
-*📍 Crates*
+•───────•°•❀•°•───────•
+*➤ Crates*
 ${crates}
-*🎒 Total Crates:* ${Object.keys(inventory.crates).map(v => user[v]).reduce((a, b) => a + b, 0)} Crates` : ''}${pets ? `
+*📦 Total Crates:* ${Object.keys(inventory.crates).map(v => user[v]).reduce((a, b) => a + b, 0)} Crates` : ''}${pets ? `
+•───────•°•❀•°•───────•
 
 
-
-
-*📍 Pets*
+•───────•°•❀•°•───────•
+*➤ Pets*
 ${pets}` : ''}${cooldowns ? `
+•───────•°•❀•°•───────•
 
-
-
-
-*⌚ Cooldowns*
+*⏳ Cooldowns*
 ${cooldowns}` : ''}
 `.trim()
   m.reply(caption)
