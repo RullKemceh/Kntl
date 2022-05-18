@@ -13,7 +13,7 @@ async function handler(m, { conn, args }) {
                 count,
                 timeout: setTimeout(() => (m.reply('timed out'), delete confirm[m.sender]), 60000)
             }
-            let txt = '⚠️Warning⚠️\n*Jangan judi karena tidak akan menang, BENERAN!!*\nApakah anda yakin (pikirkan baik-baik) mau melakukan judi (Y/n) (60s Timeout)'
+            let txt = '⚠️Peringatan⚠️\n*Jangan judi karena tidak akan menang, BENERAN!!*\nApakah anda yakin (pikirkan baik-baik) mau melakukan judi (Y/n) (60s Timeout)'
             return conn.sendButton(m.chat, txt, author, null, [['y'], ['n']], m)
         }
     } catch (e) {
@@ -22,7 +22,7 @@ async function handler(m, { conn, args }) {
             let { timeout } = confirm[m.sender]
             clearTimeout(timeout)
             delete confirm[m.sender]
-            m.reply('Rejected')
+            m.reply('Di Tolak')
         }
     }
 }
@@ -49,8 +49,10 @@ handler.before = async m => {
                 user.money += (Math.floor(count / 1.5)) * 1
             }
             m.reply(`
-Bot roll: *${Bot}*
-Kamu roll: *${Kamu}*
+╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
+| Bot roll: *${Bot}*
+| Kamu roll: *${Kamu}*
+╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 
 Kamu *${status}*, kamu ${status == 'Menang' ? `Mendapatkan *+${count * 2}*` : status == 'Kalah' ? `Kehilangan *-${count * 1}*` : `Mendapatkan *+${Math.floor(count / 1.5)}*`} 💵Money
     `.trim())
