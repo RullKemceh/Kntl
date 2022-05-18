@@ -1,6 +1,6 @@
 const rewards = {
     common: {
-        money: 101,
+        money: 1000,
         exp: 201,
         trash: 11,
         potion: [0, 1, 0, 1, 0, 0, 0, 0, 0],
@@ -8,7 +8,7 @@ const rewards = {
         uncommon: [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     },
     uncommon: {
-        money: 201,
+        money: 5000,
         exp: 401,
         trash: 31,
         potion: [0, 1, 0, 0, 0, 0, 0],
@@ -39,7 +39,7 @@ const rewards = {
         string: [0, 1, 0, 0, 0]
     },
     legendary: {
-        money: 401,
+        money: 9000,
         exp: 601,
         trash: 101,
         potion: [0, 1, 0, 0, 0],
