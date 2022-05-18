@@ -6,11 +6,6 @@ let handler = async (m, { conn }) => {
 }
 handler.help = ['bkp']
 handler.tags = ['internet']
-
 handler.command = /^(bkp)$/i
-handler.premium = true
-handler.register = true
-handler.limit = 1
-module.exports = handler
-
+handler.limit = 15
 export default handler
