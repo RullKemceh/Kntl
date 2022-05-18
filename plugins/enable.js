@@ -175,19 +175,19 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     default:
       if (!/[01]/.test(command)) return m.reply(`
 List option:
-| welcome
-| delete <
-| public <
-| antilink <
-| antidelete <
-| detect <
-| restrict <
-| nyimak <
-| autoread <
-| pconly <
-| gconly <
-| swonly <
-| simi <
+❶ welcome
+❷ delete 
+❸ public 
+❹ antilink 
+❺ antidelete 
+❻ detect 
+❼ restrict 
+❽ nyimak 
+❾ autoread 
+❿ pconly 
+❶❶ gconly 
+❶❷ swonly 
+❶❸ simi 
 Contoh:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
