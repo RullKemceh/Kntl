@@ -9,11 +9,8 @@ handler.help = ['blowjob']
 handler.tags = ['internet']
 
 handler.command = /^(blowjob)$/i
-
 handler.admin = false
 handler.botAdmin = false
-
 handler.fail = null
 handler.limit = true
-
 export default handler
