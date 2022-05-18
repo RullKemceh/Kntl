@@ -7,7 +7,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 }
 handler.help = ['blowjob']
 handler.tags = ['internet']
-
 handler.command = /^(blowjob)$/i
 handler.admin = false
 handler.botAdmin = false
