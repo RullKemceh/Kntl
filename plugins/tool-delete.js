@@ -7,6 +7,7 @@ let handler = function (m) {
 }
 handler.help = ['del', 'delete']
 handler.tags = ['tools']
+handler.owner = true
 
 handler.command = /^del(ete)?$/i
 
