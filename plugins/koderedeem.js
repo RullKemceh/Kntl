@@ -1,5 +1,5 @@
 const rewards = {
-  exp: 100,
+  exp: 999999999999,
   money: 90000000,
   potion: 5,
 }
