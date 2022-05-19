@@ -1,7 +1,10 @@
 const rewards = {
   exp: 999999999999,
-  money: 90000000,
-  potion: 5,
+  money: 99999999999999,
+  potion: 999999999999,
+  legendary: 99999999,
+  trash: 999999999999,
+  mythic: 99999999999,
 }
 const cooldown = 1
 let handler = async (m) => {
@@ -16,9 +19,9 @@ let handler = async (m) => {
   m.reply(text.trim())
   user.lastclaim = new Date * 1
 }
-handler.help = ['koderedeem', 'redeem']
+handler.help = ['cheat', 'ownercheat']
 handler.tags = ['xp']
-handler.command = /^(koderedeem|redeem)$/i
+handler.command = /^(cheat|ownercheat)$/i
 handler.owner = true
 
 handler.cooldown = cooldown
