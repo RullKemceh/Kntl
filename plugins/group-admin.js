@@ -17,9 +17,8 @@ handler.help = ['promote @user', 'demote @user', 'kick @user']
 handler.tags = ['group']
 handler.command = /^promote|demote|kick$/i
 handler.group = true
-handler.owner.group = true
 
-handler.owner = false
+handler.admin = true
 handler.botAdmin = true
 
 export default handler
