@@ -12,7 +12,7 @@ export async function before(m, { isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.sendButton(m.chat, `*Group link detect!*${isBotAdmin ? '' : '\n\n_Bot not admin_  t_t'}`, author, ['off antilink', '/disable antilink'], m)
+        await conn.sendButton(m.chat, `*𝑮𝒓𝒐𝒖𝒑 𝑳𝒊𝒏𝒌 𝑫𝒆𝒕𝒆𝒄𝒕!*${isBotAdmin ? '' : '\n\n_𝑩𝒐𝒕 𝑻𝒊𝒅𝒂𝒌 𝑨𝒅𝒎𝒊𝒏 '}`, author, ['𝘖𝘍𝘍 𝘈𝘕𝘛𝘐𝘓𝘐𝘕𝘒', '/disable antilink'], m)
         if (isBotAdmin && bot.restrict) {
             await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         } else if (!bot.restrict) return m.reply('Owner disable auto kick!')
