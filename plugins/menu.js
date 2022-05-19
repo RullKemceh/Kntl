@@ -33,8 +33,8 @@ const defaultMenu = {
 │ 𝑻𝒉𝒂𝒏𝒌𝒔 𝑼𝒅𝒉 𝑴𝒂𝒌𝒆 𝑩𝒐𝒕 𝑰𝒏𝒊
 │ 𝑺𝒆𝒎𝒐𝒈𝒂 𝑺𝒆𝒉𝒂𝒕 𝑺𝒆𝒍𝒂𝒍𝒖
 │
-│ ʙᴏᴛ ᴏɴʟɪɴᴇ ✅
-│ ᴀᴅᴅ ᴅɪ ɢʀᴜʙ ✅
+│ 𝙱𝙾𝚃 𝙱𝚈 𝚁𝚄𝙻𝙻 ☻︎
+│ 
 │
 ╰┬────────────┈ ⳹
 ┌┤◦➛ 𝑵𝒂𝒎𝒂: %name!
@@ -153,10 +153,10 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const cloudbot = './src/Rull.jpg'
-    conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', 'Group Bot', null, null, [
-      ['𝘋𝘰𝘯𝘢𝘴𝘪', '/donasi'],
-      ['𝘚𝘱𝘦𝘦𝘥', '/ping'],
-      ['𝘖𝘸𝘦𝘳 𝘉𝘰𝘵', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', '𝚁𝚞𝚕𝚕𝙱𝚘𝚝 𝙶𝙲', null, null, [
+      ['𝙳𝚘𝚗𝚊𝚜𝚒/𝚂𝚎𝚠𝚊', '/donasi'],
+      ['𝙺𝚎𝚌𝚎𝚙𝚊𝚝𝚊𝚗', '/ping'],
+      ['𝙾𝚠𝚗𝚎𝚛', '/owner']
     ], m)
   } catch (e) {
     conn.reply(m.chat, '𝐌𝐚𝐚𝐟, 𝐌𝐞𝐧𝐮 𝐒𝐞𝐝𝐚𝐧𝐠 𝐄𝐫𝐫𝐨𝐫', m)
