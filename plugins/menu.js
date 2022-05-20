@@ -154,7 +154,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const cloudbot = './src/Rull.jpg'
     conn.sendHydrated(m.chat, text.trim(), author, cloudbot, 'https://chat.whatsapp.com/Fr0CoRS7RkG1oW9K7ZEEgY', '𝚁𝚞𝚕𝚕𝙱𝚘𝚝 𝙶𝙲', null, null, [
-      ['𝙳𝚘𝚗𝚊𝚜𝚒/𝚂𝚎𝚠𝚊', '/donasi'],
+      ['𝙳𝚘𝚗𝚊𝚜𝚒', '/donasi'],
       ['𝙺𝚎𝚌𝚎𝚙𝚊𝚝𝚊𝚗', '/ping'],
       ['𝙾𝚠𝚗𝚎𝚛', '/owner']
     ], m)
