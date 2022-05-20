@@ -12,7 +12,7 @@ async function handler(m, { conn, args, usedPrefix, command }) {
     let lol = `Use format ${usedPrefix}${command} [type] [value] [number]
 example ${usedPrefix}${command} money 9999 @620000
 
-📍 Transferable items
+📍 𝑇𝑟𝑎𝑛𝑠𝑓𝑒𝑟𝑎𝑏𝑙𝑒 𝐼𝑡𝑒𝑚
 ${item.map(v => `${rpg.emoticon(v)}`.trim()).join('\n')}
 `.trim()
     const type = (args[0] || '').toLowerCase()
@@ -26,7 +26,7 @@ ${item.map(v => `${rpg.emoticon(v)}`.trim()).join('\n')}
 Are you sure you want to transfer *${count}* ${rpg.emoticon(type)}${special(type)} to *@${(who || '').replace(/@s\.whatsapp\.net/g, '')}*
 Timeout *60* detik
 `.trim()
-    let c = 'RullBot'
+    let c = '𝙍𝙪𝙡𝙡𝘽𝙤𝙩𝙯'
     conn.sendButton(m.chat, confirm, c, null, [['y'], ['n']], m, { mentions: [who] })
     confirmation[m.sender] = {
         sender: m.sender,
