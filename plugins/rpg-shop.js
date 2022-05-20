@@ -1,13 +1,13 @@
 const items = {
     buy: {
         limit: {
-            money: 1
+            money: 50
         },
         potion: {
-            money: 250,
+            money: 500,
         },
         trash: {
-            money: 21,
+            money: 30,
         }
     },
     sell: {
@@ -24,10 +24,10 @@ let handler = async (m, { command, usedPrefix, args }) => {
     let user = global.db.data.users[m.sender]
     const listItems = Object.fromEntries(Object.entries(items[command.toLowerCase()]).filter(([v]) => v && v in user))
     const info = `
-Use Format *${usedPrefix}${command} [crate] [count]*
-Usage example: *${usedPrefix}${command} potion 10*
+𝑮𝒖𝒏𝒂𝒌𝒂𝒏 𝑭𝒐𝒓𝒎𝒂𝒕 *${usedPrefix}${command} [item] [count]*
+𝑼𝒔𝒂𝒈𝒆 𝑬𝒙𝒂𝒎𝒑𝒍𝒆: *${usedPrefix}${command} potion 10*
     
-📍Items list: 
+📍𝑳𝑰𝑺𝑻 𝑰𝑻𝑬𝑴: 
 ${Object.keys(listItems).map((v) => {
         let paymentMethod = Object.keys(listItems[v]).find(v => v in user)
         return `${global.rpg.emoticon(v)} | ${listItems[v][paymentMethod]} ${global.rpg.emoticon(paymentMethod)}`.trim()
