@@ -37,13 +37,13 @@ let handler = async (m, { conn }) => {
     }
   })
   let old = performance.now()
-  await m.reply('_Testing speed..._')
+  await m.reply('_𝑀𝑒𝑛𝑔𝑢𝑘𝑢𝑟 𝐾𝑒𝑐𝑒𝑝𝑎𝑡𝑎𝑛 𝐵𝑜𝑡..._')
   let neww = performance.now()
   let speed = neww - old
   m.reply(`
-Merespon dalam ${speed} millidetik
+𝑀𝑒𝑟𝑒𝑠𝑝𝑜𝑛 𝐷𝑎𝑙𝑎𝑚 ${speed} 𝑀𝑖𝑙𝑖𝑑𝑒𝑡𝑖𝑘
 
-💬 Status :
+💬 𝑆𝑇𝐴𝑇𝑆 :
 - *${groupsIn.length}* Group Chats
 - *${groupsIn.length}* Groups Joined
 - *${groupsIn.length - groupsIn.length}* Groups Left
@@ -51,15 +51,16 @@ Merespon dalam ${speed} millidetik
 - *${chats.length}* Total Chats
 
 💻 *Server Info* :
-RAM: ${format(totalmem() - freemem())} / ${format(totalmem())}
+𝑀𝐸𝑀𝑂𝑅𝐼 𝑇𝐸𝑅𝑃𝐴𝐾𝐴𝐼: ${format(totalmem() - freemem())}
+𝑇𝑂𝑇𝐴𝐿 𝑀𝐸𝑀𝑂𝑅𝐼: ${format(totalmem())}
 
 _NodeJS Memory Usage_
 ${'```' + Object.keys(used).map((key, _, arr) => `${key.padEnd(Math.max(...arr.map(v => v.length)), ' ')}: ${format(used[key])}`).join('\n') + '```'}
 
-${cpus[0] ? `_Total CPU Usage_
+${cpus[0] ? `_𝑇𝑂𝑇𝐴𝐿 𝐶𝑃𝑈 𝑈𝑆𝐴𝐺𝐸_
 ${cpus[0].model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}
 
-_CPU Core(s) Usage (${cpus.length} Core CPU)_
+_𝐶𝑃𝑈 𝑐𝑜𝑟𝑒(𝑠) 𝑈𝑠𝑎𝑔𝑒 (${cpus.length} 𝐶𝑜𝑟𝑒 𝐶𝑃𝑈)_
 ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Object.keys(cpu.times).map(type => `- *${(type + '*').padEnd(6)}: ${(100 * cpu.times[type] / cpu.total).toFixed(2)}%`).join('\n')}`).join('\n\n')}` : ''}
 `.trim())
 }
