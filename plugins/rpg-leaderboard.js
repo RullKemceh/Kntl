@@ -31,7 +31,7 @@ let handler = async (m, { conn, args, participants, usedPrefix, command }) => {
 Use format *${usedPrefix}${command} [type] [page]*
 example *${usedPrefix}${command} money 1*
 
-📍 Type list
+📍 𝑇𝑦𝑝𝑒 𝐿𝑖𝑠𝑡
 ${leaderboard.map(v => `
 ${rpg.emoticon(v)}
 `.trim()).join('\n')}
