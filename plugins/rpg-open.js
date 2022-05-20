@@ -68,7 +68,7 @@ let handler = async (m, { command, args, usedPrefix }) => {
 𝐔𝐬𝐞 𝐅𝐨𝐫𝐦𝐚𝐭 *${usedPrefix}${command} [crate] [count]*
 𝐂𝐨𝐧𝐭𝐨𝐡 : *${usedPrefix}${command} common 10*
 
-📍Crate list: 
+📍𝐿𝑖𝑠𝑡 𝐶𝑟𝑎𝑡𝑒𝑠: 
 ${Object.keys(listCrate).map((v) => `
 ${rpg.emoticon(v)}
 `.trim()).join('\n')}
