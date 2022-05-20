@@ -5,29 +5,29 @@ let handler = async (m, { conn, participants, groupMetadata }) => {
     const listAdmin = groupAdmins.map((v, i) => `${i + 1}. @${v.id.split('@')[0]}`).join('\n')
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || m.chat.split`-`[0] + '@s.whatsapp.net'
     let text = `*「 Group Information 」*\n
-*ID:* 
+*𝐼𝐷:* 
 ${groupMetadata.id}
-*Name:* 
+*𝑁𝐴𝑀𝐴:* 
 ${groupMetadata.subject}
-*Description:* 
+*𝐷𝐸𝑆𝐾𝑅𝐼𝑃𝑆𝐼:* 
 ${groupMetadata.desc?.toString() || 'unknown'}
-*Total Members:*
+*𝑇𝑂𝑇𝐴𝐿 𝑀𝐸𝑀𝐵𝐸𝑅:*
 ${participants.length} Members
-*Group Owner:* 
+*𝑂𝑊𝑁𝐸𝑅 𝐺𝑅𝑂𝑈𝑃:* 
 @${owner.split('@')[0]}
-*Group Admins:*
+*𝐴𝐷𝑀𝐼𝑁 𝐺𝑅𝑂𝑈𝑃:*
 ${listAdmin}
-*Group Settings:*
-${isBanned ? '✅' : '❌'} Banned
-${welcome ? '✅' : '❌'} Welcome
-${detect ? '✅' : '❌'} Detect
-${del ? '❌' : '✅'} Anti Delete
-${antiLink ? '✅' : '❌'} Anti Link
-*Message Settings:*
-Welcome: ${sWelcome}
-Bye: ${sBye}
-Promote: ${sPromote}
-Demote: ${sDemote}
+*𝐺𝑅𝑂𝑈𝑃 𝑆𝐸𝑇𝑇𝐼𝑁𝐺:*
+${isBanned ? '✅' : '❌'} 𝐵𝑎𝑛𝑛𝑒𝑑
+${welcome ? '✅' : '❌'} 𝑊𝑒𝑙𝑥𝑜𝑚𝑒
+${detect ? '✅' : '❌'} 𝐷𝑒𝑡𝑒𝑐𝑡
+${del ? '❌' : '✅'} 𝐴𝑛𝑡𝑖 𝐷𝑒𝑙𝑒𝑡𝑒
+${antiLink ? '✅' : '❌'} 𝐴𝑛𝑡𝑖 𝐿𝑖𝑛𝑘
+*𝑀𝐸𝑆𝑆𝐸𝐺𝐸 𝑆𝐸𝑇𝑇𝐼𝑁𝐺:*
+𝑊𝐸𝐿𝐶𝑂𝑀𝐸: ${sWelcome}
+𝐵𝑌𝐸𝐸: ${sBye}
+𝑃𝑅𝑂𝑀𝑂𝑇𝐸: ${sPromote}
+𝐷𝐸𝑀𝑂𝑇𝐸: ${sDemote}
 `.trim()
     conn.sendFile(m.chat, pp, 'pp.jpg', text, m, false, { mentions: [...groupAdmins.map(v => v.id), owner] })
 }
