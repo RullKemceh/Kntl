@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url'
 global.owner = [
   ['6285859047172'],
   ['0'],
-  ['6285859047172', '𝙍𝙪𝙡𝙡', true]
+  ['6285859047172', 'OmRull', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -19,6 +19,16 @@ global.APIs = { // API Prefix
   zeks: 'https://api.zeks.xyz',
   pencarikode: 'https://pencarikode.xyz',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
+  hardianto: 'https://hardianto-chan.herokuapp.com',
+  rey: 'https://server-api-rey.herokuapp.com',
+  jonaz: 'https://jonaz-api-v2.herokuapp.com',
+  neoxr: 'https://neoxr-api.herokuapp.com',
+  zekais: 'http://zekais-api.herokuapp.com',
+  vhtear: 'https://api.vhtear.com',
+  lolhum: 'https://api.lolhuman.xyz',
+  fxc7: 'https://fxc7-api.herokuapp.com',
+  bx: 'https://bx-hunter.herokuapp.com',
+
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
@@ -27,6 +37,18 @@ global.APIKeys = { // APIKey Here
   'https://api.zeks.xyz': 'apivinz',
   'https://pencarikode.xyz': 'pais',
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
+  'https://server-api-rey.herokuapp.com': 'apirey',
+  'https://hardianto-chan.herokuapp.com': 'hardianto',
+  'https://neoxr-api.herokuapp.com': 'yntkts',
+  'https://pencarikode.xyz': 'APIKEY',
+  'https://api.xteam.xyz': 'HIRO',
+  'https://api.zeks.xyz': 'nyyxz-bot',
+  'https://api.lolhuman.xyz': 'ed6c4f2c72b6f92f7d201464',
+  'https://api.vhtear.com': 'sayahafiz',
+  'https://fxc7-api.herokuapp.com': 'uN8rsK4g',
+  'https://api.justaqul.xyz': '5kbUqdG00OXelFYx',
+  'http://zekais-api.herokuapp.com': 'grqgD6pU',
+  'https://bx-hunter.herokuapp.com': 'Ikyy69',
 }
 
 // Sticker WM
