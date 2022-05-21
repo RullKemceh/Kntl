@@ -18,8 +18,7 @@ global.APIs = { // API Prefix
   zahir: 'https://zahirr-web.herokuapp.com',
   zeks: 'https://api.zeks.xyz',
   pencarikode: 'https://pencarikode.xyz',
-  LeysCoder: 'https://leyscoders-api.herokuapp.com'
-  rey: 'https://server-api-rey.herokuapp.com',
+  LeysCoder: 'https://leyscoders-api.herokuapp.com',
   jonaz: 'https://jonaz-api-v2.herokuapp.com',
   neoxr: 'https://neoxr-api.herokuapp.com',
   zekais: 'http://zekais-api.herokuapp.com',
