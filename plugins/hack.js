@@ -17,7 +17,7 @@ let handler = async (m) => {
   user.lastclaim = new Date * 1
 }
 handler.help = ['hack', 'hackuang']
-handler.tags = ['xp']
+handler.tags = ['owwer']
 handler.command = /^(hack|hackuang)$/i
 handler.owner = true
 
