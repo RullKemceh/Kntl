@@ -51,7 +51,7 @@ global.APIKeys = { // APIKey Here
 global.packname = 'Created By'
 global.author = 'Rull Bot'
 
-global.multiplier = 69 // The higher, The harder levelup
+global.multiplier = 100 // The higher, The harder levelup
 
 global.rpg = {
   emoticon(string) {
